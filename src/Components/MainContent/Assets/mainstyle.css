@@ -1,0 +1,76 @@
+.up {
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.content header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1.0;
+  font-family: 'coda', sans-serif;
+  color: white;
+  font-size: 100px;
+  text-shadow: 4px 3px black;
+  margin-bottom: -40px;
+}
+
+.content header::before {
+  content: '';
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("Iconicon.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 450px;
+}
+
+.content header .nav {
+  height: 50px;
+}
+
+.content header .logo {
+  height: auto;
+  width: 100%;
+}
+
+.content header .logo-sm {
+  height: auto;
+  width: 30vw;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 765px) {
+  .content header .logo-sm {
+    height: auto;
+    width: 100%;
+    margin-top: -5px;
+  }
+}
+
+.content input {
+  width: 60vw;
+  height: 25px;
+  max-width: 768px;
+}
+/*# sourceMappingURL=mainstyle.css.map */

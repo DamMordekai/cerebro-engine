@@ -1,0 +1,28 @@
+.footer {
+  text-align: center;
+  font-family: 'coda', sans-serif;
+  color: black;
+  font-weight: bolder;
+  position: fixed;
+  background-color: #fac1158c;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+}
+
+.footer .links span {
+  margin: 5px;
+  color: white;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Footer.css.map */
