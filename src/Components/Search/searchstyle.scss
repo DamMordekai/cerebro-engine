@@ -1,0 +1,41 @@
+.search-wrapper{
+    justify-content: center;
+    display: flex;
+    
+    .searchbox{
+    display: block;
+    padding: 10px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 300;
+
+    transition: 0.4s ease-out;
+    }
+    .button{
+        text-align: center;
+        font-size: 25px;
+
+        height: 40px;
+        width: 60px;
+
+        position: absolute right;
+
+        background: none;
+
+        border: none;
+        margin-top: 2px;
+        border-radius: 8px;
+        margin-left: -65px;
+
+        transition: 0.1s ease-in;
+        
+        cursor: pointer;
+    }
+    .searchbox:focus{
+        box-shadow: 0px 0px 8px 2px #4484;
+    }
+}

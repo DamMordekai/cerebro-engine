@@ -1,0 +1,72 @@
+.up{
+    overflow: hidden;
+}
+
+.content{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    header{
+        justify-content: center;
+        opacity: 1.0;
+
+        font-family: 'coda', sans-serif;
+        color: white;
+        font-size: 100px;
+        text-shadow: 4px 3px black;
+        
+        margin-bottom: -40px;
+        
+        &::before{
+            content: '';
+            z-index: -1;
+
+            top: 0px;
+            left: 0px;
+            position: fixed;
+
+            height: 100%;
+            width: 100%;
+
+            background-image: url('Iconicon.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top    ;
+            background-size: 450px;
+        }
+        .nav{
+            height: 50px;
+        }
+
+        .logo{
+            height: auto;
+            width: 100%;
+
+        }
+        .logo-sm{
+            height: auto;
+            width: 30vw;
+            margin-top: -5px;
+        }
+        
+        @media screen and (max-width: 765px) {
+            .logo-sm{
+                height: auto;
+                width: 100%;
+                margin-top: -5px;
+            }
+        }
+    }
+
+    input{
+        width: 60vw;
+        height: 25px;
+        max-width: 768px;
+    }
+}
+
+
